@@ -22,7 +22,6 @@ import com.bezkoder.spring.files.upload.db.message.ResponseMessage;
 import com.bezkoder.spring.files.upload.db.model.FileDB;
 
 @Controller
-@CrossOrigin("http://localhost:8081")
 public class FileController {
 
   @Autowired
@@ -30,7 +29,8 @@ public class FileController {
 
   @PostMapping("/upload")
   public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
-    String message = "";
+    String message = "slkmvdklvmle";
+    System.out.println("cmkamckjnej");
     try {
       storageService.store(file);
 
